@@ -130,10 +130,6 @@ def small_verification(email, password):
         else:
             return False
 
-@app.route('/data-cleared')
-def after_clear():
-    return render_template('clear_data.html')
-
 @app.route('/credit-enter',  methods=['GET','POST'])
 def credit():
     conn = sqlite3.connect('expenses.db')
