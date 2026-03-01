@@ -106,6 +106,15 @@ def verify():
 
             if action == 'modify':
                 return redirect('/modify')
+            
+            if action == 'clear-credit':
+                conn = sqlite3.connect('expenses.db')
+                c = conn.cursor()
+                c.execute("DELETE FROM credits")
+                conn.commit()
+                conn.close()
+
+                return redirect('/credit-db')
 
         else:
             return "Invalid credentials"
