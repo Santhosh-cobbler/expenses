@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verification</title>
+    <style>
+        .body{
+
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .verify-btn{
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;            
+        }
+
+        .verify-btn:hover{
+            background-color: #555;
+        }
+        
+        .container {
+            width: 350px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .verify-btn-cls{
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="header">
+            <h2>verification</h2>
+        </div>
+
+        <form method="POST">
+            <label>Email:</label>
+            <input type="text" name="email" required>
+
+            <label>Password:</label>
+            <input type="text" name="pass" required>
+            <button type="submit" name="action" value="clear" class="verify-btn">
+                Verify
+            </button>  
+        </form>
+    </div>
+</body>
+</html>
