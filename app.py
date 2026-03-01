@@ -89,6 +89,7 @@ def verify():
     if request.method == 'POST':
 
         action = request.form.get('action')
+        print(action)
         email = request.form['email']
         passw = request.form['pass']
 
